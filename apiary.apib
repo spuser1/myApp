@@ -319,17 +319,17 @@ Výběr všech objednávek z databáze.
 
 
 
-# group Produkty
+# Group Produkty
 ## Create produkt[/products]
 ### Vložení nového produktu do databáze. [POST] 
-+ Response 201 (application/json)
++ Response 201
 {
     "id": "1234567"
 }
 
-## homepage products[/products?homepage=true]
+## Homepage products[/products?homepage=true]
 ### Seznam produktů pro úvodní stránku. [GET] 
-+ Response 200 (application/json)
++ Response 200
     [{"name": "iPhone 4 32GB černý",
     "url": "iphone-4-32gb-cerny",
     "perex": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
@@ -381,7 +381,7 @@ Výběr všech objednávek z databáze.
 
 ## Search in products[/products?limit={limit}&offset={offset}&query={dotaz}]
 ### Vyhledávání v produktech.[GET]
-+ Response 200 (application/json)
++ Response 200
 
 {"count":120,
 "products":[{"name": "iPhone 4 32GB černý",
@@ -411,7 +411,7 @@ Výběr všech objednávek z databáze.
 
 ## Detail product[/products?url={url}]
 ### Detail produktu podle URL.[GET]
-+ Response 200 (application/json)
++ Response 200
 
 {"id":"123456",
 "name": "iPhone 4 32GB",
@@ -447,7 +447,7 @@ Výběr všech objednávek z databáze.
 
 ## Detail product id[/products/{id}]
 ### Detail produktu podle ID.[GET] 
-+ Response 200 (application/json)
++ Response 200
 
 {"id":"123456",
 "name": "iPhone 4 32GB",
@@ -484,7 +484,7 @@ Výběr všech objednávek z databáze.
 
 ## List products in category[/products?category={kategorie}&filter={filter}&limit={limit}&offset={offset}&order={order}]
 ### Seznam produktů v kategorii.[GET] 
-+ Response 200 (application/json)
++ Response 200
 
 {"count":120,
 "products":[{"name": "iPhone 4 32GB černý",
@@ -538,7 +538,7 @@ Výběr všech objednávek z databáze.
 
 ## List products in admin[/products?filter={filter}&limit={limit}&offset={offset}&order={order}&query={query}]
 ### Seznam produktů v administraci.[GET] 
-+ Response 200 (application/json)
++ Response 200
 
 {"count":120,
 "products":[{"name": "iPhone 4 32GB černý",
@@ -604,18 +604,18 @@ Výběr všech objednávek z databáze.
 
 ## Save images[/products/{id}/images]
 ### Vkládání obrázků k produktům.[PUT] 
-+ Response 204 (application/json)
++ Response 204
 
 ## Delete product with id[/products/{id}]
 ### Odstranění produktu s ID {id}[DELETE] 
-+ Response 204 (application/json)
++ Response 204
 
 
 # Group Parametry
 
 ## List all parameters in admin[/parameters]
 ### Seznam všech parametrů v administraci.[GET] 
-+ Response 200 (application/json)
++ Response 200
 [
     {
         "id": 12345,
@@ -677,7 +677,7 @@ Výběr všech objednávek z databáze.
 
 ## Detail parameter[/parameters/{id}]
 ### Detail parametru.[GET] 
-+ Response 200 (application/json)
++ Response 200
 {
     "id": 12345,
     "name": "Operační systém",
@@ -687,15 +687,15 @@ Výběr všech objednávek z databáze.
 
 ## Create parameter[/parameters]
 ### Vložení parametru.[POST] 
-+ Response 201 (application/json)
++ Response 201
 {
     "id": 42
 }
 
 ## Update parameter[/parameters/{id}]
 ### Uprava parametru[PUT] 
-+ Response 204 (application/json)
++ Response 204
 
 ## Delete parameter[/parameters/{id}]
 ### Smazání parametru.[DELETE] 
-+ Response 204 (application/json)
++ Response 204
