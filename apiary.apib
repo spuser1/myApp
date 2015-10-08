@@ -295,8 +295,9 @@ Výběr všech objednávek z databáze.
             
             {"number": "1234567"}
 
+
 ## Edit Order [/api/v1/orders/{number}]
-### Částečná editace jedné objednávky (např. editace statusu).[POST]
+### Částečná editace jedné objednávky např. editace statusu. [POST]
 + Response 204
 
 
@@ -614,89 +615,96 @@ Výběr všech objednávek z databáze.
 
 # Group Parametry
 
-## List all parameters in admin[/parameters]
+## List all parameters in admin [/parameters]
 ### Seznam všech parametrů v administraci.[GET] 
 + Response 200
-[
-    {
-        "id": 12345,
-        "name": "Operační systém",
-        "type": "codebook",
-        "values": ["iOS", "Android", "Windows"]
-    },
-    {
-        "id": 12346,
-        "name": "Barva",
-        "type": "codebook",
-        "values": ["Bílá", "Černá"]
-    },
-    {
-        "id": 12347,
-        "name": "Digitální fotoaparát",
-        "type": "codebook",
-        "values": ["ano", "ne"]
-    },
-    {
-        "id": 12348,
-        "name": "Rozlišení fotoaparátu",
-        "type": "value"
-    },
-    {
-        "id": 12349,
-        "name": "Pohotovostní doba",
-        "type": "value"
-    },
-    {
-        "id": 12350,
-        "name": "MP3",
-        "type": "codebook",
-        "values": ["ano", "ne"]
-    },
-    {
-        "id": 12351,
-        "name": "FM rádio",
-        "type": "codebook",
-        "values": ["ano", "ne"]
-    },
-    {
-        "id": 12352,
-        "name": "HD video",
-        "type": "codebook",
-        "values": ["ano", "ne"]
-    },
-    {
-        "id": 12353,
-        "name": "Rozměry",
-        "type": "value"
-    },
-    {
-        "id": 12354,
-        "name": "Hmotnost",
-        "type": "value"
-    }
-]
 
-## Detail parameter[/parameters/{id}]
-### Detail parametru.[GET] 
-+ Response 200
-{
-    "id": 12345,
-    "name": "Operační systém",
-    "type": "codebook",
-    "values": ["iOS", "Android", "Windows"]
-}
+        [
+            {
+                "id": 12345,
+                "name": "Operační systém",
+                "type": "codebook",
+                "values": ["iOS", "Android", "Windows"]
+            },
+            {
+                "id": 12346,
+                "name": "Barva",
+                "type": "codebook",
+                "values": ["Bílá", "Černá"]
+            },
+            {
+                "id": 12347,
+                "name": "Digitální fotoaparát",
+                "type": "codebook",
+                "values": ["ano", "ne"]
+            },
+            {
+                "id": 12348,
+                "name": "Rozlišení fotoaparátu",
+                "type": "value"
+            },
+            {
+                "id": 12349,
+                "name": "Pohotovostní doba",
+                "type": "value"
+            },
+            {
+                "id": 12350,
+                "name": "MP3",
+                "type": "codebook",
+                "values": ["ano", "ne"]
+            },
+            {
+                "id": 12351,
+                "name": "FM rádio",
+                "type": "codebook",
+                "values": ["ano", "ne"]
+            },
+            {
+                "id": 12352,
+                "name": "HD video",
+                "type": "codebook",
+                "values": ["ano", "ne"]
+            },
+            {
+                "id": 12353,
+                "name": "Rozměry",
+                "type": "value"
+            },
+            {
+                "id": 12354,
+                "name": "Hmotnost",
+                "type": "value"
+            }
+        ]
 
-## Create parameter[/parameters]
+
 ### Vložení parametru.[POST] 
 + Response 201
-{
-    "id": 42
-}
 
-## Update parameter[/parameters/{id}]
-### Uprava parametru[PUT] 
+        {
+            "id": 42
+        }
+        
+## Detail parameter [/parameters/{id}]
+### Detail parametru.[GET] 
++ Response 200
+
+        {
+            "id": 12345,
+            "name": "Operační systém",
+            "type": "codebook",
+            "values": ["iOS", "Android", "Windows"]
+        }
+
+
+
+
+
+### Update parameter[PUT] 
+Uprava parametru
 + Response 204
 
-## Delete parameter[/parameters/{id}]
-### Smazání parametru.[DELETE] 
+### Delete parameter [DELETE]
+Smazání parametru. 
 + Response 204
