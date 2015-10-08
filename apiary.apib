@@ -322,14 +322,14 @@ Výběr všech objednávek z databáze.
 # group Produkty
 ## Create produkt[/products]
 ### Vložení nového produktu do databáze. [POST] 
-response 201 (application/json)
++ Response 201 (application/json)
 {
     "id": "1234567"
 }
 
 ## homepage products[/products?homepage=true]
 ### Seznam produktů pro úvodní stránku. [GET] 
-response 200 (application/json)
++ Response 200 (application/json)
     [{"name": "iPhone 4 32GB černý",
     "url": "iphone-4-32gb-cerny",
     "perex": "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
@@ -381,7 +381,7 @@ response 200 (application/json)
 
 ## Search in products[/products?limit={limit}&offset={offset}&query={dotaz}]
 ### Vyhledávání v produktech.[GET]
-response 200 (application/json)
++ Response 200 (application/json)
 
 {"count":120,
 "products":[{"name": "iPhone 4 32GB černý",
@@ -411,7 +411,7 @@ response 200 (application/json)
 
 ## Detail product[/products?url={url}]
 ### Detail produktu podle URL.[GET]
-response 200 (application/json)
++ Response 200 (application/json)
 
 {"id":"123456",
 "name": "iPhone 4 32GB",
@@ -447,7 +447,7 @@ response 200 (application/json)
 
 ## Detail product id[/products/{id}]
 ### Detail produktu podle ID.[GET] 
-response 200 (application/json)
++ Response 200 (application/json)
 
 {"id":"123456",
 "name": "iPhone 4 32GB",
@@ -484,7 +484,7 @@ response 200 (application/json)
 
 ## List products in category[/products?category={kategorie}&filter={filter}&limit={limit}&offset={offset}&order={order}]
 ### Seznam produktů v kategorii.[GET] 
-response 200 (application/json)
++ Response 200 (application/json)
 
 {"count":120,
 "products":[{"name": "iPhone 4 32GB černý",
@@ -538,7 +538,7 @@ response 200 (application/json)
 
 ## List products in admin[/products?filter={filter}&limit={limit}&offset={offset}&order={order}&query={query}]
 ### Seznam produktů v administraci.[GET] 
-response 200 (application/json)
++ Response 200 (application/json)
 
 {"count":120,
 "products":[{"name": "iPhone 4 32GB černý",
@@ -604,18 +604,18 @@ response 200 (application/json)
 
 ## Save images[/products/{id}/images]
 ### Vkládání obrázků k produktům.[PUT] 
-response 204 (application/json)
++ Response 204 (application/json)
 
 ## Delete product with id[/products/{id}]
 ### Odstranění produktu s ID {id}[DELETE] 
-response 204 (application/json)
++ Response 204 (application/json)
 
 
 # Group Parametry
 
 ## List all parameters in admin[/parameters]
 ### Seznam všech parametrů v administraci.[GET] 
-response 200 (application/json)
++ Response 200 (application/json)
 [
     {
         "id": 12345,
@@ -677,7 +677,7 @@ response 200 (application/json)
 
 ## Detail parameter[/parameters/{id}]
 ### Detail parametru.[GET] 
-response 200 (application/json)
++ Response 200 (application/json)
 {
     "id": 12345,
     "name": "Operační systém",
@@ -687,15 +687,15 @@ response 200 (application/json)
 
 ## Create parameter[/parameters]
 ### Vložení parametru.[POST] 
-response 201 (application/json)
++ Response 201 (application/json)
 {
     "id": 42
 }
 
 ## Update parameter[/parameters/{id}]
 ### Uprava parametru[PUT] 
-response 204 (application/json)
++ Response 204 (application/json)
 
 ## Delete parameter[/parameters/{id}]
 ### Smazání parametru.[DELETE] 
-response 204 (application/json)
++ Response 204 (application/json)
