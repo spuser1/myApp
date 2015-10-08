@@ -289,14 +289,14 @@ Výběr všech objednávek z databáze.
         "price": 45000}
         ]}
 
-## Create Order [/api/v1/orders]
+## Create Order [/api/v1/api/v1/orders]
 ### Vložení nové objednávky do databáze. [POST]
 + Response 200
             
             {"number": "1234567"}
 
 
-## Edit Order [/api/v1/orders/{number}]
+## Edit Order [/api/v1/api/v1/orders/{number}]
 ### Částečná editace jedné objednávky např. editace statusu. [POST]
 + Response 204
 
@@ -322,13 +322,13 @@ Výběr všech objednávek z databáze.
 
 
 # Group Produkty
-## Create produkt [/products]
+## Create produkt [/api/v1/products]
 ### Vložení nového produktu do databáze. [POST] 
 + Response 201
 
         { "id": "1234567" }
 
-## Homepage products [/products?homepage=true]
+## Homepage products [/api/v1/products?homepage=true]
 ### Seznam produktů pro úvodní stránku. [GET] 
 + Response 200
 
@@ -381,7 +381,7 @@ Výběr všech objednávek z databáze.
         "price": 15000
         }]
 
-## Search in products [/products?limit={limit}&offset={offset}&query={dotaz}]
+## Search in products [/api/v1/products?limit={limit}&offset={offset}&query={dotaz}]
 ### Vyhledávání v produktech.[GET]
 + Response 200
 
@@ -411,7 +411,7 @@ Výběr všech objednávek z databáze.
           {"name": "S fialovým pouzdrem", "code": "XAZLUT05"}
         ]}]}
 
-## Detail product [/products?url={url}]
+## Detail product [/api/v1/products?url={url}]
 ### Detail produktu podle URL.[GET]
 + Response 200
 
@@ -447,7 +447,7 @@ Výběr všech objednávek z databáze.
         "dph": "20"
         }
 
-## Detail product id [/products/{id}]
+## Detail product id [/api/v1/products/{id}]
 ### Detail produktu podle ID.[GET] 
 + Response 200
 
@@ -488,7 +488,7 @@ Výběr všech objednávek z databáze.
 ### Odstranění produktu s ID id [DELETE] 
 + Response 204
 
-## List products in category [/products?category={kategorie}&filter={filter}&limit={limit}&offset={offset}&order={order}]
+## List products in category [/api/v1/products?category={kategorie}&filter={filter}&limit={limit}&offset={offset}&order={order}]
 ### Seznam produktů v kategorii.[GET] 
 + Response 200
 
@@ -542,7 +542,7 @@ Výběr všech objednávek z databáze.
         "price": 15000
         }]}
 
-## List products in admin [/products?filter={filter}&limit={limit}&offset={offset}&order={order}&query={query}]
+## List products in admin [/api/v1/products?filter={filter}&limit={limit}&offset={offset}&order={order}&query={query}]
 ### Seznam produktů v administraci.[GET] 
 + Response 200
 
@@ -608,14 +608,14 @@ Výběr všech objednávek z databáze.
         "price": 15000
         }]}
 
-## Save images [/products/{id}/images]
+## Save images [/api/v1/products/{id}/images]
 ### Vkládání obrázků k produktům.[PUT] 
 + Response 204
 
 
 # Group Parametry
 
-## List all parameters in admin [/parameters]
+## List all parameters in admin [/api/v1/parameters]
 ### Seznam všech parametrů v administraci.[GET] 
 + Response 200
 
@@ -687,7 +687,7 @@ Vložení parametru.
             "id": 42
         }
         
-## Detail parameter [/parameters/{id}]
+## Detail parameter [/api/v1/parameters/{id}]
 ### Detail parametru.[GET] 
 + Response 200
 
